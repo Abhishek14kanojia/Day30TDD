@@ -5,7 +5,7 @@ public class InvoiceSummary {
 	public int numOfRides;
 	public double totalFare;
 	public double avgFare;
-	
+
 	public InvoiceSummary(int numOfRides, double totalFare) {
 		this.numOfRides = numOfRides;
 		this.totalFare = totalFare;
@@ -22,5 +22,6 @@ public class InvoiceSummary {
 		return (numOfRides == that.numOfRides) && Double.compare(that.totalFare, totalFare) == 0
 				&& Double.compare(that.avgFare, avgFare) == 0;
 	}
+ 
 
 }

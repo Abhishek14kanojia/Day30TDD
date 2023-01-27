@@ -22,4 +22,11 @@ public class InvoiceGenerator {
 		int numOfRides = rides.length;
 		return new InvoiceSummary(numOfRides, totalFare);
 	}
+	public void addRides(String userId, Ride[] ride) {
+		RideRepository.addRide(userId, ride);
+	}
+
+	public InvoiceSummary getInvoiceSummary(String userId) {
+		return this.calculateFare(RideRepository.getRides(userId));
+	} 
 }
