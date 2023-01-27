@@ -25,4 +25,4 @@ public class Ride {
 	public void setTime(int time) {
 		this.time = time;
 	}
-}
+} 
